@@ -33,7 +33,7 @@ That last distinction is deliberate: the report separates evidence from assumpti
 Install the public release directly from GitHub:
 
 ```bash
-python -m pip install "repository-assurance-snapshot @ git+https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot.git@v0.1.1"
+python -m pip install "repository-assurance-snapshot @ git+https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot.git@v0.1.2"
 ```
 
 Or install from a local checkout:
@@ -50,7 +50,7 @@ No token is read from the environment or sent in requests.
 
 ```yaml
 - name: Build repository assurance snapshot
-  uses: HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot@v0.1.1
+  uses: HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot@v0.1.2
   with:
     repository: ${{ github.repository }}
     output: repository-assurance

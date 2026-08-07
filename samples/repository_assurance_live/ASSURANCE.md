@@ -3,9 +3,9 @@
 > **Informational, bounded and read-only. This is not a security, compliance, legal or release certification.**
 
 - **Source:** `https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot`
-- **Revision:** `15592bd2efef1bb8426506b193f8c6123d90a357`
-- **Observed at:** `2026-08-07T23:28:05+00:00`
-- **Collector:** `repository-assurance-snapshot 0.1.1`
+- **Revision:** `c324ad4fd26a976aa086d648fd126a30aa14a4d8`
+- **Observed at:** `2026-08-07T23:30:31+00:00`
+- **Collector:** `repository-assurance-snapshot 0.1.2`
 
 ## Summary
 
