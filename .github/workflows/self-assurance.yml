@@ -1,0 +1,80 @@
+name: Self-assurance evidence
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# The collector needs no GitHub API token. Checkout alone receives the job's
+# read-only token, and persist-credentials prevents it being left in .git.
+permissions:
+  contents: read
+
+concurrency:
+  group: self-assurance-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  snapshot:
+    name: Test and dogfood public snapshot
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out this revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Run deterministic tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src
+        run: python -m unittest discover -s tests -v
+
+      - name: Dogfood the local Action against this public repository
+        uses: ./
+        env:
+          # Explicitly prove the collector does not need a GitHub API credential.
+          # GitHub's separate artifact runtime remains available to upload-artifact.
+          GITHUB_TOKEN: ""
+          GH_TOKEN: ""
+        with:
+          repository: ${{ github.repository }}
+          output: repository-assurance
+
+      - name: Verify dossier hashes and non-certification boundary
+        shell: python
+        run: |
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path("repository-assurance")
+          report = json.loads((root / "assurance.json").read_text(encoding="utf-8"))
+          manifest = json.loads((root / "evidence_manifest.json").read_text(encoding="utf-8"))
+
+          assert report["source"]["kind"] == "public_github"
+          assert report["source"]["canonical_ref"] == f"https://github.com/${{ github.repository }}"
+          assert report["disposition"] == "informational_only_cannot_certify"
+          assert report["limitations"]["not_observed"]
+          assert report["limitations"]["not_tested"]
+          assert report["limitations"]["cannot_certify"]
+
+          for item in manifest["dossier_files"]:
+              payload = (root / item["path"]).read_bytes()
+              assert hashlib.sha256(payload).hexdigest() == item["sha256"]
+              assert len(payload) == item["size_bytes"]
+
+      - name: Upload bounded evidence dossier
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: repository-assurance-${{ github.sha }}
+          path: repository-assurance/
+          if-no-files-found: error
+          retention-days: 14
+

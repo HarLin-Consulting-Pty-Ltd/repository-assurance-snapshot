@@ -1,5 +1,7 @@
 # Repository Assurance Snapshot
 
+[![Self-assurance evidence](https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/actions/workflows/self-assurance.yml/badge.svg)](https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/actions/workflows/self-assurance.yml)
+
 Generate a read-only evidence dossier for one public GitHub repository revision.
 
 [Buy a human-reviewed A$49 public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot)
@@ -54,6 +56,18 @@ No token is read from the environment or sent in requests.
 
 The action observes the public repository through unauthenticated public APIs. It
 does not inspect private settings or execute repository code.
+
+### Self-dogfood proof
+
+The repository's [`self-assurance.yml`](.github/workflows/self-assurance.yml)
+workflow runs the local Action against this repository's public GitHub URL,
+verifies the dossier hashes and non-certification boundary, and uploads the
+three-file dossier as a 14-day Actions artifact. The job grants only
+`contents: read`; checkout does not persist credentials; and the collector step
+explicitly receives blank `GITHUB_TOKEN` and `GH_TOKEN` values. Checkout and
+artifact upload still use GitHub's separate managed runner mechanisms—this is a
+proof that the **collector's public API requests** need no credential, not a
+claim that the entire Actions runner is token-free.
 
 ## Human-reviewed snapshot
 
