@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://harlin-consulting-pty-ltd.github.io/repository-assurance-snapshot/sitemap.xml

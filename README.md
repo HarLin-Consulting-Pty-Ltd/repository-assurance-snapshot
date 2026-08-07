@@ -4,6 +4,8 @@ Generate a read-only evidence dossier for one public GitHub repository revision.
 
 [Buy a human-reviewed A$49 public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot)
 
+[Open the buyer-facing assurance page](https://harlin-consulting-pty-ltd.github.io/repository-assurance-snapshot/)
+
 **See the proof before you buy:** [open a real snapshot of this repository](samples/repository_assurance_live/ASSURANCE.md), with [machine-readable findings](samples/repository_assurance_live/assurance.json) and a [SHA-256 evidence manifest](samples/repository_assurance_live/evidence_manifest.json).
 
 An original, bounded prototype that inspects a **public GitHub repository** or an explicitly declared local public-repository fixture and produces:
