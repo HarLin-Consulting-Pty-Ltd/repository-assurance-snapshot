@@ -11,9 +11,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from . import __version__
 
 SCHEMA = "harlin.repository_assurance_snapshot/v0.1"
-USER_AGENT = "HarLin-Repository-Assurance-Snapshot/0.1 (public-read-only)"
+USER_AGENT = f"HarLin-Repository-Assurance-Snapshot/{__version__} (public-read-only)"
 MAX_REMOTE_TEXT_FILES = 30
 MAX_REMOTE_FILE_BYTES = 512_000
 MAX_LOCAL_FILE_BYTES = 5_000_000
@@ -529,7 +530,7 @@ def generate_snapshot(source: str, output_dir: Path, local_public_fixture: bool 
         "disposition": "informational_only_cannot_certify",
         "collector": {
             "name": "repository-assurance-snapshot",
-            "version": "0.1.0",
+            "version": __version__,
             "access": "public_read_only_no_token_no_code_execution",
         },
         "source": {
@@ -577,4 +578,3 @@ def generate_snapshot(source: str, output_dir: Path, local_public_fixture: bool 
     }
     manifest_path.write_bytes(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True).encode("utf-8") + b"\n")
     return {"markdown": markdown_path, "json": json_path, "manifest": manifest_path}
-

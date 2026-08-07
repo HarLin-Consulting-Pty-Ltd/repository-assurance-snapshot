@@ -2,16 +2,16 @@
   "dossier_files": [
     {
       "path": "ASSURANCE.md",
-      "sha256": "689261919ae9c3e66b93ef65b9bf736c70d3d65d3b1b5efa6a2f6359344b5612",
-      "size_bytes": 4886
+      "sha256": "1362d4d9c5363a21dd274a4f12246206552e884b2c75fb12e1e77dc6fb771323",
+      "size_bytes": 5318
     },
     {
       "path": "assurance.json",
-      "sha256": "5a51be657c18aae85649a9771b3ef8739cfa83bae69dd066d59c2bbdff4306c0",
-      "size_bytes": 6056
+      "sha256": "2d79e8c459e9399bc4ec15574b688a4b495572ec4fba0ee934cff2c2fcd08e83",
+      "size_bytes": 6543
     }
   ],
-  "generated_at": "2026-08-07T11:30:21+00:00",
+  "generated_at": "2026-08-07T23:28:05+00:00",
   "hash_algorithm": "sha256",
   "limitations": {
     "manifest_self_hash": "The manifest does not hash itself, avoiding a recursive hash claim.",
@@ -20,87 +20,105 @@
   "observed_evidence": [
     {
       "kind": "github_commit_metadata",
-      "sha256": "03b5d5327327e4401a65a9b640499f2543e1237fdd947824d854661e770669dd",
-      "size_bytes": 73970,
+      "sha256": "85bca38bcbe94b1c5ac8df847643e3a43158bf9c419f704a71bdb5a1a051269e",
+      "size_bytes": 6730,
       "source_ref": "https://api.github.com/repos/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/commits/main"
     },
     {
       "kind": "github_contributor_metadata",
-      "sha256": "720f54246ee05d619a46acb96c3654f1f60910f5b1f8c66d8c39d43f2d96fac1",
+      "sha256": "95bc6fb46008bc8ae818484ba4478febdd5c1ecf0f3623885bc57940811b0188",
       "size_bytes": 136,
       "source_ref": "https://api.github.com/repos/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/contributors?per_page=100&anon=1"
     },
     {
       "kind": "github_repository_metadata",
-      "sha256": "07d3a7f07f518f13cea6ae7b1aaaca2f8b177077dc25f05f2dbf2433d1366b88",
-      "size_bytes": 8380,
+      "sha256": "d1791adf8310db489dae64ec907539e5a9159f16e0c90d337020e675d56c778b",
+      "size_bytes": 8655,
       "source_ref": "https://api.github.com/repos/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot"
     },
     {
       "kind": "github_tree_metadata",
-      "sha256": "972a801c53c8b4b257671fd940c76724a6c1307da64150df1da32ba9bd0e8ba7",
-      "size_bytes": 9734,
-      "source_ref": "https://api.github.com/repos/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/git/trees/176e964b89c2a6673dbab98c962802f9a131818d?recursive=1"
+      "sha256": "690614d24726ff0f7be484b24f96f1009a6d8ecf79361a79b2f019c450cc09da",
+      "size_bytes": 13525,
+      "source_ref": "https://api.github.com/repos/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/git/trees/15592bd2efef1bb8426506b193f8c6123d90a357?recursive=1"
+    },
+    {
+      "kind": "observed_repository_file",
+      "sha256": "11bda5eb8b493db1568b5467a808fe3bf0cca753dd18f9856cb5de8840ef6616",
+      "size_bytes": 2716,
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/.github/workflows/self-assurance.yml"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "c71f25fc575bbf0115940f21469d9ec7511ee6a28d3a2e85d1661ce1a4fb4b8a",
       "size_bytes": 1082,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/LICENSE"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/LICENSE"
     },
     {
       "kind": "observed_repository_file",
-      "sha256": "860ba311b4f666a977f40a40a28c87ce6e3a38b76e0920f19b89b1718ed33efa",
-      "size_bytes": 2488,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/README.md"
+      "sha256": "526bdf62bf0e500f190fd0f21cb6c4370b4abf09855b3ab9a914e74941c4669c",
+      "size_bytes": 1550,
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/PUBLISHING.md"
+    },
+    {
+      "kind": "observed_repository_file",
+      "sha256": "e8a41330da9a7f44f4d0dd2c0c398bde92e4fae91a092c6b362ca73a87155566",
+      "size_bytes": 4632,
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/README.md"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "dcf9f07f5522f67facc9245745561dd77652e92769daf894427fd77c249c79f6",
       "size_bytes": 127,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/fixtures/public_demo_repo/.github/SECURITY.md"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/fixtures/public_demo_repo/.github/SECURITY.md"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "5ff4bec7bfb1fd111b170cc758f2d1e263a8ad6ad11434b3ce96510f444153d4",
       "size_bytes": 98,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/fixtures/public_demo_repo/LICENSE"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/fixtures/public_demo_repo/LICENSE"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "e6d51cd79a3627ea70fe9e80c8b9e64cb72c20d1b3f981b69411c363a0b70d19",
       "size_bytes": 323,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/fixtures/public_demo_repo/README.md"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/fixtures/public_demo_repo/README.md"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "336de780ae1f46679ebf8b5542af7ffdb1088d8dba2edf67897754ddfa05228f",
       "size_bytes": 131,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/fixtures/public_demo_repo/docs/assurance.md"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/fixtures/public_demo_repo/docs/assurance.md"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "7968a8ebcfa96092c81f19f0e8b92d7d4a2a26fdc05b58b6e2e7f34d8d3db56a",
       "size_bytes": 135,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/fixtures/public_demo_repo/release/provenance.json"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/fixtures/public_demo_repo/release/provenance.json"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "0af0156d9a55ed163ba7f1d3cca1329158e8b1b1606ba6221ef906345634c147",
       "size_bytes": 223,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/fixtures/public_demo_repo/sbom.spdx.json"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/fixtures/public_demo_repo/sbom.spdx.json"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "961948eb6f6c2ed72ac7f7d22affb64169460a1597d709302da7a25275bdfd58",
       "size_bytes": 167,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/fixtures/public_demo_repo/test-results/junit.xml"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/fixtures/public_demo_repo/test-results/junit.xml"
     },
     {
       "kind": "observed_repository_file",
       "sha256": "88f16685de500b7ba4ecd777721549daefc88dd0544859cb7147c7af6ad178da",
       "size_bytes": 4894,
-      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/176e964b89c2a6673dbab98c962802f9a131818d/samples/public_demo/ASSURANCE.md"
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/samples/public_demo/ASSURANCE.md"
+    },
+    {
+      "kind": "observed_repository_file",
+      "sha256": "689261919ae9c3e66b93ef65b9bf736c70d3d65d3b1b5efa6a2f6359344b5612",
+      "size_bytes": 4886,
+      "source_ref": "https://raw.githubusercontent.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/15592bd2efef1bb8426506b193f8c6123d90a357/samples/repository_assurance_live/ASSURANCE.md"
     }
   ],
   "schema": "harlin.repository_assurance_evidence_manifest/v0.1",
@@ -108,6 +126,6 @@
     "canonical_ref": "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot",
     "default_branch": "main",
     "kind": "public_github",
-    "revision": "176e964b89c2a6673dbab98c962802f9a131818d"
+    "revision": "15592bd2efef1bb8426506b193f8c6123d90a357"
   }
 }

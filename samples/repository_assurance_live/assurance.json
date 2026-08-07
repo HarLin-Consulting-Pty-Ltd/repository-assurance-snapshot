@@ -2,7 +2,7 @@
   "collector": {
     "access": "public_read_only_no_token_no_code_execution",
     "name": "repository-assurance-snapshot",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "disposition": "informational_only_cannot_certify",
   "findings": [
@@ -18,16 +18,22 @@
     },
     {
       "code": "WORKFLOW_IMMUTABLE_REFS",
-      "evidence": "No GitHub workflow file was observed.",
-      "source_refs": [],
-      "status": "not_observed",
+      "evidence": "All 3 observed action reference(s) were pinned to full commit SHAs.",
+      "limitation": "Pinning reduces tag-mutation risk but does not prove an action or workflow safe.",
+      "source_refs": [
+        ".github/workflows/self-assurance.yml"
+      ],
+      "status": "pass",
       "title": "Immutable workflow action references"
     },
     {
       "code": "WORKFLOW_PERMISSIONS",
-      "evidence": "No GitHub workflow file was observed.",
-      "source_refs": [],
-      "status": "not_observed",
+      "evidence": "A permissions declaration was observed in all 1 workflow file(s).",
+      "limitation": "Presence is not a semantic least-privilege proof; nested YAML and effective GitHub defaults were not evaluated.",
+      "source_refs": [
+        ".github/workflows/self-assurance.yml"
+      ],
+      "status": "pass",
       "title": "Explicit workflow permissions"
     },
     {
@@ -82,16 +88,18 @@
     },
     {
       "code": "DOCUMENT_LOCAL_LINKS",
-      "evidence": "Checked 1 relative Markdown link(s); 0 unresolved target(s).",
+      "evidence": "Checked 5 relative Markdown link(s); 1 unresolved target(s).",
       "limitation": "External URL availability, anchors, rendered-site routing and non-Markdown documentation were not tested.",
       "source_refs": [
+        "PUBLISHING.md",
         "README.md",
         "fixtures/public_demo_repo/.github/SECURITY.md",
         "fixtures/public_demo_repo/README.md",
         "fixtures/public_demo_repo/docs/assurance.md",
-        "samples/public_demo/ASSURANCE.md"
+        "samples/public_demo/ASSURANCE.md",
+        "samples/repository_assurance_live/ASSURANCE.md"
       ],
-      "status": "pass",
+      "status": "warn",
       "title": "Documentation local-link integrity"
     },
     {
@@ -131,17 +139,18 @@
       "Legal licence compatibility, copyright ownership and regulatory compliance were not assessed."
     ]
   },
-  "observed_at": "2026-08-07T11:30:21+00:00",
+  "observed_at": "2026-08-07T23:28:05+00:00",
   "schema": "harlin.repository_assurance_snapshot/v0.1",
   "source": {
     "canonical_ref": "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot",
     "default_branch": "main",
     "kind": "public_github",
-    "revision": "176e964b89c2a6673dbab98c962802f9a131818d"
+    "revision": "15592bd2efef1bb8426506b193f8c6123d90a357"
   },
   "summary": {
     "info": 5,
-    "not_observed": 4,
-    "pass": 2
+    "not_observed": 2,
+    "pass": 3,
+    "warn": 1
   }
 }

@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from repository_assurance_snapshot import __version__
 from repository_assurance_snapshot.scanner import SnapshotError, generate_snapshot
 
 
@@ -27,6 +28,7 @@ class SnapshotTests(unittest.TestCase):
             for path in paths.values():
                 self.assertTrue(path.is_file())
             report = json.loads((output / "assurance.json").read_text(encoding="utf-8"))
+            self.assertEqual(__version__, report["collector"]["version"])
             self.assertEqual("informational_only_cannot_certify", report["disposition"])
             self.assertTrue(report["limitations"]["not_observed"])
             self.assertTrue(report["limitations"]["not_tested"])
@@ -57,4 +59,3 @@ class SnapshotTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

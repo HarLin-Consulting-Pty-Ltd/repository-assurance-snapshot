@@ -3,18 +3,18 @@
 > **Informational, bounded and read-only. This is not a security, compliance, legal or release certification.**
 
 - **Source:** `https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot`
-- **Revision:** `176e964b89c2a6673dbab98c962802f9a131818d`
-- **Observed at:** `2026-08-07T11:30:21+00:00`
-- **Collector:** `repository-assurance-snapshot 0.1.0`
+- **Revision:** `15592bd2efef1bb8426506b193f8c6123d90a357`
+- **Observed at:** `2026-08-07T23:28:05+00:00`
+- **Collector:** `repository-assurance-snapshot 0.1.1`
 
 ## Summary
 
 | Status | Count |
 |---|---:|
-| pass | 2 |
-| warn | 0 |
+| pass | 3 |
+| warn | 1 |
 | info | 5 |
-| not_observed | 4 |
+| not_observed | 2 |
 
 ## Findings
 
@@ -29,17 +29,27 @@ Sources:
 
 Limitation: A local fixture declaration does not prove that an equivalent remote repository is public.
 
-### WORKFLOW_IMMUTABLE_REFS — not_observed
+### WORKFLOW_IMMUTABLE_REFS — pass
 
 **Immutable workflow action references**
 
-No GitHub workflow file was observed.
+All 3 observed action reference(s) were pinned to full commit SHAs.
 
-### WORKFLOW_PERMISSIONS — not_observed
+Sources:
+- `.github/workflows/self-assurance.yml`
+
+Limitation: Pinning reduces tag-mutation risk but does not prove an action or workflow safe.
+
+### WORKFLOW_PERMISSIONS — pass
 
 **Explicit workflow permissions**
 
-No GitHub workflow file was observed.
+A permissions declaration was observed in all 1 workflow file(s).
+
+Sources:
+- `.github/workflows/self-assurance.yml`
+
+Limitation: Presence is not a semantic least-privilege proof; nested YAML and effective GitHub defaults were not evaluated.
 
 ### SBOM_EVIDENCE — info
 
@@ -95,18 +105,20 @@ No root or .github SECURITY.md was observed.
 
 Limitation: Policy presence does not prove response performance or vulnerability handling.
 
-### DOCUMENT_LOCAL_LINKS — pass
+### DOCUMENT_LOCAL_LINKS — warn
 
 **Documentation local-link integrity**
 
-Checked 1 relative Markdown link(s); 0 unresolved target(s).
+Checked 5 relative Markdown link(s); 1 unresolved target(s).
 
 Sources:
+- `PUBLISHING.md`
 - `README.md`
 - `fixtures/public_demo_repo/.github/SECURITY.md`
 - `fixtures/public_demo_repo/README.md`
 - `fixtures/public_demo_repo/docs/assurance.md`
 - `samples/public_demo/ASSURANCE.md`
+- `samples/repository_assurance_live/ASSURANCE.md`
 
 Limitation: External URL availability, anchors, rendered-site routing and non-Markdown documentation were not tested.
 
