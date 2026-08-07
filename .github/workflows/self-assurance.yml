@@ -1,9 +1,6 @@
 name: Self-assurance evidence
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 # The collector needs no GitHub API token. Checkout alone receives the job's
@@ -77,4 +74,3 @@ jobs:
           path: repository-assurance/
           if-no-files-found: error
           retention-days: 14
-

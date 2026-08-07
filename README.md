@@ -1,7 +1,5 @@
 # Repository Assurance Snapshot
 
-[![Self-assurance evidence](https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/actions/workflows/self-assurance.yml/badge.svg)](https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/actions/workflows/self-assurance.yml)
-
 Generate a read-only evidence dossier for one public GitHub repository revision.
 
 [Buy a human-reviewed A$49 public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot)
@@ -60,7 +58,7 @@ does not inspect private settings or execute repository code.
 ### Self-dogfood proof
 
 The repository's [`self-assurance.yml`](.github/workflows/self-assurance.yml)
-workflow runs the local Action against this repository's public GitHub URL,
+workflow is configured to run the local Action against this repository's public GitHub URL,
 verifies the dossier hashes and non-certification boundary, and uploads the
 three-file dossier as a 14-day Actions artifact. The job grants only
 `contents: read`; checkout does not persist credentials; and the collector step
