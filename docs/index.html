@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Repository Assurance Snapshot | Evidence for Software Due Diligence</title>
-  <meta name="description" content="A read-only, source-cited repository evidence snapshot for software due diligence, security questionnaires and customer assurance. Public repositories only. A$49.">
+  <title>GitHub Repository Due Diligence Evidence | Repository Assurance Snapshot</title>
+  <meta name="description" content="Turn a public GitHub repository into source-cited evidence for software vendor due diligence, customer security questionnaires and procurement review. Free collector or A$49 human review.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://harlin-consulting-pty-ltd.github.io/repository-assurance-snapshot/">
   <meta property="og:title" content="Repository Assurance Snapshot">
@@ -30,6 +30,9 @@
     section { margin-top:52px; }
     h2 { font-size:clamp(1.5rem,3vw,2.2rem); line-height:1.15; }
     ul { padding-left:1.25rem; }
+    table { width:100%; border-collapse:collapse; background:var(--card); }
+    th, td { padding:12px; border:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { background:#e9f2ef; }
     .boundary { border-left:5px solid #ba642e; }
     pre { overflow:auto; padding:16px; color:#eaf7f5; background:#16312f; border-radius:10px; }
     code { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.9rem; }
@@ -40,11 +43,32 @@
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"Service",
-    "name":"Repository Assurance Snapshot",
-    "description":"A human-reviewed, read-only evidence snapshot for a public GitHub repository.",
-    "offers":{"@type":"Offer","price":"49.00","priceCurrency":"AUD","url":"https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot"},
-    "provider":{"@type":"Organization","name":"HarLin Consulting Pty Ltd"}
+    "@graph":[
+      {
+        "@type":"Service",
+        "name":"Repository Assurance Snapshot human review",
+        "description":"A human-reviewed, read-only evidence snapshot for one public GitHub repository.",
+        "offers":{"@type":"Offer","price":"49.00","priceCurrency":"AUD","url":"https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot"},
+        "provider":{"@type":"Organization","name":"HarLin Consulting Pty Ltd"}
+      },
+      {
+        "@type":"SoftwareApplication",
+        "name":"Repository Assurance Snapshot",
+        "applicationCategory":"DeveloperApplication",
+        "operatingSystem":"Windows, macOS, Linux",
+        "softwareVersion":"0.1.2",
+        "offers":{"@type":"Offer","price":"0","priceCurrency":"AUD"},
+        "downloadUrl":"https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/releases/tag/v0.1.2"
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"What repository access is required?","acceptedAnswer":{"@type":"Answer","text":"Only a public GitHub repository URL. The collector requests no token, private access or repository write permission."}},
+          {"@type":"Question","name":"Is this a security audit or certification?","acceptedAnswer":{"@type":"Answer","text":"No. It is a point-in-time evidence snapshot with explicit not-observed, not-tested and cannot-certify limitations."}},
+          {"@type":"Question","name":"What does the paid review add?","acceptedAnswer":{"@type":"Answer","text":"The A$49 service adds bounded human review and delivery of the source-cited Markdown dossier, machine-readable findings and hash-bound manifest."}}
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -57,7 +81,7 @@
       <a class="button primary" href="https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot?utm_source=github_pages&amp;utm_medium=owned&amp;utm_campaign=repository_assurance_v1&amp;utm_content=primary_cta">Order the A$49 snapshot</a>
       <a class="button secondary" href="https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/blob/main/samples/repository_assurance_live/ASSURANCE.md">Read a real sample</a>
     </div>
-    <p>No token, repository write access, clone or code execution is requested.</p>
+    <p>No token, repository write access, clone or code execution is requested. The A$49 checkout collects the required public GitHub repository URL, so no separate email hand-off is needed.</p>
 
     <div class="proof" aria-label="Delivered evidence">
       <article class="card"><h2>Human-readable dossier</h2><p>Clear findings with direct source links and explicit limitations.</p></article>
@@ -86,6 +110,31 @@
       <pre><code>python -m pip install "repository-assurance-snapshot @ git+https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot.git@v0.1.2"
 repository-assurance-snapshot owner/repository --output snapshot</code></pre>
       <p><a href="https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/releases/tag/v0.1.2">Download the tested v0.1.2 wheel or source archive</a>. Use the free collector for self-service evidence; order the A$49 service when you need a human-reviewed dossier ready to hand to a customer or procurement reviewer.</p>
+    </section>
+
+    <section>
+      <h2>Free collector or human-reviewed dossier?</h2>
+      <table>
+        <thead><tr><th>Need</th><th>Free collector</th><th>A$49 human review</th></tr></thead>
+        <tbody>
+          <tr><td>Generate evidence files</td><td>Yes, self-service</td><td>Yes</td></tr>
+          <tr><td>Public repository only</td><td>Yes</td><td>Yes</td></tr>
+          <tr><td>Human review of findings and limitations</td><td>No</td><td>Included</td></tr>
+          <tr><td>Delivery-ready dossier for a customer or procurement reviewer</td><td>You prepare it</td><td>Included</td></tr>
+          <tr><td>Audit, certification or legal opinion</td><td>No</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <h3>What repository access is required?</h3>
+      <p>Only a public GitHub repository URL. No token, private access, clone or repository write permission is requested.</p>
+      <h3>Is this a security audit or certification?</h3>
+      <p>No. It is a point-in-time evidence snapshot with explicit <em>not observed</em>, <em>not tested</em> and <em>cannot certify</em> limitations.</p>
+      <h3>What does the paid review add?</h3>
+      <p>Bounded human review and delivery of the source-cited Markdown dossier, machine-readable findings and hash-bound manifest for one public repository.</p>
+      <div class="actions"><a class="button primary" href="https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot?utm_source=github_pages&amp;utm_medium=owned&amp;utm_campaign=repository_assurance_v1&amp;utm_content=faq_cta">Order the A$49 human-reviewed snapshot</a></div>
     </section>
 
     <footer>Repository Assurance Snapshot · HarLin Consulting Pty Ltd · Evidence only; no certification claim.</footer>
