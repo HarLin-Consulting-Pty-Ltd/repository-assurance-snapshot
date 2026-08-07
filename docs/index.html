@@ -31,6 +31,8 @@
     h2 { font-size:clamp(1.5rem,3vw,2.2rem); line-height:1.15; }
     ul { padding-left:1.25rem; }
     .boundary { border-left:5px solid #ba642e; }
+    pre { overflow:auto; padding:16px; color:#eaf7f5; background:#16312f; border-radius:10px; }
+    code { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.9rem; }
     footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:.92rem; }
     a { color:var(--accent); }
     @media (max-width:760px) { main { padding-top:40px; } .proof { grid-template-columns:1fr; } }
@@ -81,6 +83,9 @@
     <section>
       <h2>See the engine before buying</h2>
       <p>The <a href="https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot">open-source collector</a>, <a href="https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/blob/main/samples/repository_assurance_live/assurance.json">machine-readable sample</a> and <a href="https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/blob/main/samples/repository_assurance_live/evidence_manifest.json">evidence manifest</a> are public. The paid service adds bounded human review and delivery.</p>
+      <pre><code>python -m pip install "repository-assurance-snapshot @ git+https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot.git@v0.1.1"
+repository-assurance-snapshot owner/repository --output snapshot</code></pre>
+      <p><a href="https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/releases/tag/v0.1.1">Download the tested v0.1.1 wheel or source archive</a>. Use the free collector for self-service evidence; order the A$49 service when you need a human-reviewed dossier ready to hand to a customer or procurement reviewer.</p>
     </section>
 
     <footer>Repository Assurance Snapshot · HarLin Consulting Pty Ltd · Evidence only; no certification claim.</footer>
