@@ -3,7 +3,7 @@
 The package is installable from the public GitHub release without a package-registry account:
 
 ```bash
-python -m pip install "repository-assurance-snapshot @ git+https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot.git@v0.1.0"
+python -m pip install "repository-assurance-snapshot @ git+https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot.git@v0.1.1"
 ```
 
 ## Python registry gate

@@ -2,8 +2,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 build/
-dist/
-dist_clean/
+dist*/
 *.egg-info/
 snapshot-output/
 Offer_Assets/
