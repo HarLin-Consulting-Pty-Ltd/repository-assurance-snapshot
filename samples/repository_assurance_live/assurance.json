@@ -1,0 +1,147 @@
+{
+  "collector": {
+    "access": "public_read_only_no_token_no_code_execution",
+    "name": "repository-assurance-snapshot",
+    "version": "0.1.0"
+  },
+  "disposition": "informational_only_cannot_certify",
+  "findings": [
+    {
+      "code": "PUBLIC_READ_ONLY_SOURCE",
+      "evidence": "GitHub reported the repository public and the collector used no token.",
+      "limitation": "A local fixture declaration does not prove that an equivalent remote repository is public.",
+      "source_refs": [
+        "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot"
+      ],
+      "status": "pass",
+      "title": "Public, read-only source boundary"
+    },
+    {
+      "code": "WORKFLOW_IMMUTABLE_REFS",
+      "evidence": "No GitHub workflow file was observed.",
+      "source_refs": [],
+      "status": "not_observed",
+      "title": "Immutable workflow action references"
+    },
+    {
+      "code": "WORKFLOW_PERMISSIONS",
+      "evidence": "No GitHub workflow file was observed.",
+      "source_refs": [],
+      "status": "not_observed",
+      "title": "Explicit workflow permissions"
+    },
+    {
+      "code": "SBOM_EVIDENCE",
+      "evidence": "Observed 1 path(s) that appear to contain SBOM evidence.",
+      "limitation": "File naming/presence does not prove completeness, freshness or accuracy.",
+      "source_refs": [
+        "fixtures/public_demo_repo/sbom.spdx.json"
+      ],
+      "status": "info",
+      "title": "Software-bill-of-materials evidence"
+    },
+    {
+      "code": "TEST_EVIDENCE",
+      "evidence": "Observed 1 test-result path(s).",
+      "limitation": "Tests were not executed; result authenticity, coverage and revision association were not verified.",
+      "source_refs": [
+        "fixtures/public_demo_repo/test-results/junit.xml"
+      ],
+      "status": "info",
+      "title": "Test-result evidence"
+    },
+    {
+      "code": "LICENSE_DECLARATION",
+      "evidence": "Observed licence evidence: files=2, GitHub SPDX=MIT.",
+      "limitation": "No legal interpretation, dependency-licence compatibility assessment or ownership opinion was performed.",
+      "source_refs": [
+        "LICENSE",
+        "fixtures/public_demo_repo/LICENSE",
+        "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot"
+      ],
+      "status": "info",
+      "title": "Licence declaration"
+    },
+    {
+      "code": "RELEASE_PROVENANCE_EVIDENCE",
+      "evidence": "Observed 1 provenance/attestation path(s).",
+      "limitation": "Presence was observed; signatures, issuer identity and subject-artifact binding were not cryptographically verified.",
+      "source_refs": [
+        "fixtures/public_demo_repo/release/provenance.json"
+      ],
+      "status": "info",
+      "title": "Release provenance or attestation evidence"
+    },
+    {
+      "code": "SECURITY_POLICY",
+      "evidence": "No root or .github SECURITY.md was observed.",
+      "limitation": "Policy presence does not prove response performance or vulnerability handling.",
+      "source_refs": [],
+      "status": "not_observed",
+      "title": "Security policy"
+    },
+    {
+      "code": "DOCUMENT_LOCAL_LINKS",
+      "evidence": "Checked 1 relative Markdown link(s); 0 unresolved target(s).",
+      "limitation": "External URL availability, anchors, rendered-site routing and non-Markdown documentation were not tested.",
+      "source_refs": [
+        "README.md",
+        "fixtures/public_demo_repo/.github/SECURITY.md",
+        "fixtures/public_demo_repo/README.md",
+        "fixtures/public_demo_repo/docs/assurance.md",
+        "samples/public_demo/ASSURANCE.md"
+      ],
+      "status": "pass",
+      "title": "Documentation local-link integrity"
+    },
+    {
+      "code": "DEFAULT_BRANCH_PROTECTION",
+      "evidence": "Protection settings were not observable in the bounded public/read-only collection.",
+      "source_refs": [
+        "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot"
+      ],
+      "status": "not_observed",
+      "title": "Default-branch protection"
+    },
+    {
+      "code": "CONTRIBUTOR_CONCENTRATION",
+      "evidence": "Public API returned 1 contributor record(s); the largest observed share was 100.0%.",
+      "limitation": "The API page is capped, bot/anonymous identity may distort results, and concentration is not a continuity verdict.",
+      "source_refs": [
+        "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot"
+      ],
+      "status": "info",
+      "title": "Contributor concentration"
+    }
+  ],
+  "limitations": {
+    "cannot_certify": [
+      "This snapshot cannot certify security, compliance, accessibility, legal fitness, release integrity or operational readiness.",
+      "Observed evidence may be incomplete, stale, misleading or unrelated to the deployed product.",
+      "A pass means only that the stated bounded observation was made; it is not an assurance opinion or warranty."
+    ],
+    "not_observed": [
+      "Default-branch protection was not observable without privileged repository access.",
+      "Secrets, private branches, private issues, organisation rulesets and non-public repository settings were outside the public/no-token boundary."
+    ],
+    "not_tested": [
+      "Repository code, builds, tests, dependencies and workflows were not executed.",
+      "External links, runtime behaviour, exploitability, code quality and production deployment were not tested.",
+      "Cryptographic attestation validity and artifact-to-source reproducibility were not verified.",
+      "Legal licence compatibility, copyright ownership and regulatory compliance were not assessed."
+    ]
+  },
+  "observed_at": "2026-08-07T11:30:21+00:00",
+  "schema": "harlin.repository_assurance_snapshot/v0.1",
+  "source": {
+    "canonical_ref": "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot",
+    "default_branch": "main",
+    "kind": "public_github",
+    "revision": "176e964b89c2a6673dbab98c962802f9a131818d"
+  },
+  "summary": {
+    "info": 5,
+    "not_observed": 4,
+    "pass": 2
+  }
+}

@@ -4,6 +4,8 @@ Generate a read-only evidence dossier for one public GitHub repository revision.
 
 [Buy a human-reviewed A$49 public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot)
 
+**See the proof before you buy:** [open a real snapshot of this repository](samples/repository_assurance_live/ASSURANCE.md), with [machine-readable findings](samples/repository_assurance_live/assurance.json) and a [SHA-256 evidence manifest](samples/repository_assurance_live/evidence_manifest.json).
+
 An original, bounded prototype that inspects a **public GitHub repository** or an explicitly declared local public-repository fixture and produces:
 
 - `ASSURANCE.md` — a human-readable, source-cited snapshot;
@@ -11,6 +13,18 @@ An original, bounded prototype that inspects a **public GitHub repository** or a
 - `evidence_manifest.json` — SHA-256 hashes for the dossier and observed evidence.
 
 The prototype is permanently read-only. It uses unauthenticated GitHub public APIs, requests no private-repository or write access, does not execute repository code, and does not certify security, compliance, licensing or release fitness.
+
+## What the snapshot answers
+
+In one bounded dossier, it records what was actually observed at one repository revision, including:
+
+- whether workflow action references are pinned to immutable commit SHAs;
+- whether workflows declare permissions;
+- whether licence, security-policy, SBOM, test-result and release-provenance evidence is present;
+- whether checked local Markdown links resolve; and
+- which important questions were **not observed**, **not tested** or **cannot be certified**.
+
+That last distinction is deliberate: the report separates evidence from assumptions instead of turning missing access into a reassuring score.
 
 ## Install and run
 
@@ -48,6 +62,8 @@ snapshot adds a bounded human review of the generated dossier and delivery of
 the hashed evidence package within two business days after a valid public
 repository URL and matching order number are received. It is not an audit,
 certification, penetration test, legal licence opinion or security warranty.
+
+[Order the A$49 human-reviewed public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot)
 
 ## Tests
 
