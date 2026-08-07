@@ -1,6 +1,10 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+build/
+dist/
+dist_clean/
+*.egg-info/
 snapshot-output/
 Offer_Assets/
 Offer_Package/

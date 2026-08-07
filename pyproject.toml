@@ -5,13 +5,40 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "repository-assurance-snapshot"
 version = "0.1.0"
-description = "Read-only public repository assurance snapshot prototype"
+description = "Read-only evidence dossiers for public GitHub repository due diligence"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
+license = "MIT"
+authors = [
+  { name = "HarLin Consulting Pty Ltd" },
+]
+keywords = [
+  "due-diligence",
+  "evidence",
+  "github",
+  "repository-assurance",
+  "sbom",
+  "security-questionnaire",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://harlin-consulting-pty-ltd.github.io/repository-assurance-snapshot/"
+Documentation = "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot#readme"
+Issues = "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot/issues"
+Repository = "https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot"
 
 [project.scripts]
 repository-assurance-snapshot = "repository_assurance_snapshot.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

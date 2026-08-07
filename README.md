@@ -30,6 +30,14 @@ That last distinction is deliberate: the report separates evidence from assumpti
 
 ## Install and run
 
+Install the public release directly from GitHub:
+
+```bash
+python -m pip install "repository-assurance-snapshot @ git+https://github.com/HarLin-Consulting-Pty-Ltd/repository-assurance-snapshot.git@v0.1.0"
+```
+
+Or install from a local checkout:
+
 ```bash
 python -m pip install .
 repository-assurance-snapshot owner/repository --output snapshot
