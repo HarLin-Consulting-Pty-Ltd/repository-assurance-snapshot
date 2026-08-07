@@ -1,0 +1,83 @@
+{
+  "dossier_files": [
+    {
+      "path": "ASSURANCE.md",
+      "sha256": "88f16685de500b7ba4ecd777721549daefc88dd0544859cb7147c7af6ad178da",
+      "size_bytes": 4894
+    },
+    {
+      "path": "assurance.json",
+      "sha256": "c876b9e013f4758c394db3b6be2119dc465ce9e56b7d6754930dae2efc82619c",
+      "size_bytes": 6096
+    }
+  ],
+  "generated_at": "2026-08-07T07:10:25+00:00",
+  "hash_algorithm": "sha256",
+  "limitations": {
+    "manifest_self_hash": "The manifest does not hash itself, avoiding a recursive hash claim.",
+    "meaning": "A matching hash proves byte identity only; it does not prove truth, completeness, safety, ownership or certification."
+  },
+  "observed_evidence": [
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "dcf9f07f5522f67facc9245745561dd77652e92769daf894427fd77c249c79f6",
+      "size_bytes": 127,
+      "source_ref": ".github/SECURITY.md"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "d7988fe8ea6961dd97df721021d1a51d0b0dde2295b6aa63f6ccd0940fefd726",
+      "size_bytes": 253,
+      "source_ref": ".github/workflows/ci.yml"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "5ff4bec7bfb1fd111b170cc758f2d1e263a8ad6ad11434b3ce96510f444153d4",
+      "size_bytes": 98,
+      "source_ref": "LICENSE"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "e6d51cd79a3627ea70fe9e80c8b9e64cb72c20d1b3f981b69411c363a0b70d19",
+      "size_bytes": 323,
+      "source_ref": "README.md"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "336de780ae1f46679ebf8b5542af7ffdb1088d8dba2edf67897754ddfa05228f",
+      "size_bytes": 131,
+      "source_ref": "docs/assurance.md"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "7968a8ebcfa96092c81f19f0e8b92d7d4a2a26fdc05b58b6e2e7f34d8d3db56a",
+      "size_bytes": 135,
+      "source_ref": "release/provenance.json"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "0af0156d9a55ed163ba7f1d3cca1329158e8b1b1606ba6221ef906345634c147",
+      "size_bytes": 223,
+      "source_ref": "sbom.spdx.json"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "2e750ed4db1b56c06cb17c7a6a4833a1ed09bf1e4ebca73adc751b31ca670a72",
+      "size_bytes": 130,
+      "source_ref": "src/demo.py"
+    },
+    {
+      "kind": "local_public_fixture_file",
+      "sha256": "961948eb6f6c2ed72ac7f7d22affb64169460a1597d709302da7a25275bdfd58",
+      "size_bytes": 167,
+      "source_ref": "test-results/junit.xml"
+    }
+  ],
+  "schema": "harlin.repository_assurance_evidence_manifest/v0.1",
+  "source": {
+    "canonical_ref": "C:\\AI\\HarLin_Commercial\\Revenue_Bridge.prj\\Experiments\\Repository_Assurance_Snapshot\\fixtures\\public_demo_repo",
+    "default_branch": null,
+    "kind": "local_public_fixture",
+    "revision": "local-content-sha256:d2bddb4d3e828b66934c6a762fd04347cdca0c0f9d7da3d194d57b60be50d6f9"
+  }
+}

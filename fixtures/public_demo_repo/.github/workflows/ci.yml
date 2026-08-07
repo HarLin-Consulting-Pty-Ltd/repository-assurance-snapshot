@@ -1,0 +1,13 @@
+name: demo-ci
+on:
+  push:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Demonstration only
+        run: echo "Fixture workflow is never executed by the snapshot tool."
+

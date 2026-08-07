@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repository-assurance-snapshot"
+version = "0.1.0"
+description = "Read-only public repository assurance snapshot prototype"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+repository-assurance-snapshot = "repository_assurance_snapshot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

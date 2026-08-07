@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+snapshot-output/
+Offer_Assets/
+Offer_Package/
+EXPERIMENT_CARD.md
+LIVE_ACTIVATION_2026-08-07.md
+VALIDATION_2026-08-07.md
+Repository_Assurance_Snapshot_Buyer_Package_v1.zip
+.github/workflows/test.yml
