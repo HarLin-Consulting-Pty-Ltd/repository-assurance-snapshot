@@ -2,6 +2,8 @@
 
 Generate a read-only evidence dossier for one public GitHub repository revision.
 
+![Repository Assurance Snapshot showing the real public sample, observed status counts and read-only evidence workflow](assets/repository_assurance_truthful_cover.svg)
+
 [Buy a human-reviewed A$49 public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot?utm_source=github&utm_medium=organic&utm_campaign=repository_assurance_v1&utm_content=readme_top)
 
 [Open the buyer-facing assurance page](https://harlin-consulting-pty-ltd.github.io/repository-assurance-snapshot/)
