@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">Public Repository Assurance Snapshot</title>
+  <desc id="desc">Truthful product cover showing a read-only public GitHub evidence workflow and actual sample status counts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061426"/>
+      <stop offset="0.58" stop-color="#081c31"/>
+      <stop offset="1" stop-color="#09243a"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5ee7ff"/>
+      <stop offset="1" stop-color="#28b8ed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000814" flood-opacity="0.38"/>
+    </filter>
+    <style>
+      .sans { font-family: "Segoe UI", Arial, sans-serif; }
+      .mono { font-family: "Cascadia Mono", "Consolas", monospace; }
+      .panel { fill: #081b2e; stroke: #1b5676; stroke-width: 2; }
+      .muted { fill: #9eb7c8; }
+      .white { fill: #f4f8fb; }
+      .cyan { fill: #53d8ff; }
+      .green { fill: #67df9a; }
+      .amber { fill: #ffc857; }
+      .line { stroke: #2b6b8c; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#48c9f2" stroke-width="1">
+    <path d="M0 170H1672M0 290H1672M0 410H1672M0 530H1672M0 650H1672M0 770H1672"/>
+    <path d="M140 0V941M380 0V941M620 0V941M860 0V941M1100 0V941M1340 0V941M1580 0V941"/>
+  </g>
+
+  <g class="sans">
+    <text x="62" y="88" class="white" font-size="64" font-weight="800" letter-spacing="1">PUBLIC REPOSITORY</text>
+    <text x="62" y="162" fill="url(#cyan)" font-size="64" font-weight="800" letter-spacing="1">ASSURANCE SNAPSHOT</text>
+    <text x="66" y="209" class="white" font-size="24" font-weight="650" letter-spacing="2.2">READ-ONLY</text>
+    <circle cx="232" cy="201" r="5" fill="#53d8ff"/>
+    <text x="253" y="209" class="white" font-size="24" font-weight="650" letter-spacing="2.2">SOURCE-CITED</text>
+    <circle cx="446" cy="201" r="5" fill="#ffc857"/>
+    <text x="467" y="209" class="white" font-size="24" font-weight="650" letter-spacing="2.2">ONE REVISION</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="258" width="850" height="566" rx="16" class="panel"/>
+    <rect x="942" y="48" width="670" height="776" rx="16" class="panel"/>
+  </g>
+
+  <g class="sans">
+    <text x="92" y="307" class="cyan" font-size="20" font-weight="750" letter-spacing="1.5">REAL PUBLIC SAMPLE</text>
+    <text x="92" y="343" class="white" font-size="20">HarLin-Consulting-Pty-Ltd / repository-assurance-snapshot</text>
+    <text x="92" y="374" class="mono muted" font-size="16">revision c324ad4fd26a976aa086d648fd126a30aa14a4d8</text>
+    <line x1="92" y1="398" x2="878" y2="398" class="line"/>
+
+    <text x="92" y="443" class="muted" font-size="16" font-weight="700" letter-spacing="1.3">OBSERVED STATUS COUNTS</text>
+    <g>
+      <rect x="92" y="469" width="182" height="92" rx="12" fill="#0c2a38" stroke="#2f8d69"/>
+      <text x="114" y="507" class="green" font-size="18" font-weight="700">PASS</text>
+      <text x="242" y="538" class="white" font-size="45" text-anchor="end" font-weight="750">3</text>
+
+      <rect x="292" y="469" width="182" height="92" rx="12" fill="#2b2719" stroke="#8d752f"/>
+      <text x="314" y="507" class="amber" font-size="18" font-weight="700">WARN</text>
+      <text x="442" y="538" class="white" font-size="45" text-anchor="end" font-weight="750">1</text>
+
+      <rect x="492" y="469" width="182" height="92" rx="12" fill="#102838" stroke="#39789b"/>
+      <text x="514" y="507" class="cyan" font-size="18" font-weight="700">INFO</text>
+      <text x="642" y="538" class="white" font-size="45" text-anchor="end" font-weight="750">5</text>
+
+      <rect x="692" y="469" width="186" height="92" rx="12" fill="#252634" stroke="#6e718d"/>
+      <text x="714" y="502" fill="#c3c6d9" font-size="15" font-weight="700">NOT OBSERVED</text>
+      <text x="846" y="538" class="white" font-size="45" text-anchor="end" font-weight="750">2</text>
+    </g>
+
+    <text x="92" y="608" class="muted" font-size="16" font-weight="700" letter-spacing="1.3">SELECTED FINDINGS</text>
+    <g font-size="18">
+      <circle cx="105" cy="646" r="8" class="green"/><text x="128" y="653" class="white">Public, read-only source boundary</text><text x="848" y="653" class="green" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="105" cy="688" r="8" class="green"/><text x="128" y="695" class="white">Immutable workflow action references</text><text x="848" y="695" class="green" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="105" cy="730" r="8" class="amber"/><text x="128" y="737" class="white">Documentation local-link integrity</text><text x="848" y="737" class="amber" text-anchor="end" font-weight="700">WARN</text>
+      <circle cx="105" cy="772" r="8" fill="#8f96a8"/><text x="128" y="779" class="white">Default-branch protection</text><text x="848" y="779" fill="#c3c6d9" text-anchor="end" font-weight="700">NOT OBSERVED</text>
+    </g>
+  </g>
+
+  <g class="sans">
+    <text x="978" y="98" class="cyan" font-size="20" font-weight="750" letter-spacing="1.5">WHAT THE COLLECTOR ACTUALLY DOES</text>
+    <line x1="978" y1="122" x2="1578" y2="122" class="line"/>
+
+    <g>
+      <rect x="982" y="158" width="596" height="104" rx="14" fill="#0a263d" stroke="#2f9bc7"/>
+      <circle cx="1026" cy="210" r="25" fill="#0f3b56" stroke="#53d8ff" stroke-width="2"/>
+      <text x="1026" y="218" class="cyan" text-anchor="middle" font-size="23" font-weight="800">1</text>
+      <text x="1070" y="201" class="white" font-size="23" font-weight="700">Public GitHub API</text>
+      <text x="1070" y="231" class="muted" font-size="17">Public repository URL; no token supplied</text>
+
+      <path d="M1280 262V294" stroke="#53d8ff" stroke-width="3"/><path d="M1270 286l10 12 10-12" fill="none" stroke="#53d8ff" stroke-width="3"/>
+
+      <rect x="982" y="300" width="596" height="104" rx="14" fill="#0a263d" stroke="#2f9bc7"/>
+      <circle cx="1026" cy="352" r="25" fill="#0f3b56" stroke="#53d8ff" stroke-width="2"/>
+      <text x="1026" y="360" class="cyan" text-anchor="middle" font-size="23" font-weight="800">2</text>
+      <text x="1070" y="343" class="white" font-size="23" font-weight="700">Fetch bounded public evidence</text>
+      <text x="1070" y="373" class="muted" font-size="17">Metadata and selected small text files only</text>
+
+      <path d="M1280 404V436" stroke="#53d8ff" stroke-width="3"/><path d="M1270 428l10 12 10-12" fill="none" stroke="#53d8ff" stroke-width="3"/>
+
+      <rect x="982" y="442" width="596" height="104" rx="14" fill="#0a263d" stroke="#2f9bc7"/>
+      <circle cx="1026" cy="494" r="25" fill="#0f3b56" stroke="#53d8ff" stroke-width="2"/>
+      <text x="1026" y="502" class="cyan" text-anchor="middle" font-size="23" font-weight="800">3</text>
+      <text x="1070" y="485" class="white" font-size="23" font-weight="700">Inspect declared evidence</text>
+      <text x="1070" y="515" class="muted" font-size="17">Separate observed, not tested and cannot certify</text>
+
+      <path d="M1280 546V578" stroke="#53d8ff" stroke-width="3"/><path d="M1270 570l10 12 10-12" fill="none" stroke="#53d8ff" stroke-width="3"/>
+
+      <rect x="982" y="584" width="596" height="104" rx="14" fill="#0a263d" stroke="#2f9bc7"/>
+      <circle cx="1026" cy="636" r="25" fill="#0f3b56" stroke="#53d8ff" stroke-width="2"/>
+      <text x="1026" y="644" class="cyan" text-anchor="middle" font-size="23" font-weight="800">4</text>
+      <text x="1070" y="627" class="white" font-size="23" font-weight="700">Produce the evidence package</text>
+      <text x="1070" y="657" class="muted" font-size="17">Markdown + JSON + SHA-256 manifest</text>
+    </g>
+
+    <rect x="982" y="722" width="596" height="70" rx="12" fill="#102c29" stroke="#3a9c70"/>
+    <text x="1280" y="752" class="green" text-anchor="middle" font-size="19" font-weight="750">NO CLONE • NO CHECKOUT • NO INSTALL • NO EXECUTION</text>
+    <text x="1280" y="778" fill="#b8d8c7" text-anchor="middle" font-size="15">Informational evidence only — not a certification</text>
+  </g>
+
+  <g class="sans">
+    <rect x="60" y="853" width="1552" height="52" rx="10" fill="#061321" stroke="#214a64"/>
+    <text x="86" y="886" class="white" font-size="18" font-weight="650">HUMAN-READABLE DOSSIER</text>
+    <circle cx="353" cy="879" r="5" fill="#53d8ff"/>
+    <text x="375" y="886" class="white" font-size="18" font-weight="650">MACHINE-READABLE FINDINGS</text>
+    <circle cx="705" cy="879" r="5" fill="#ffc857"/>
+    <text x="727" y="886" class="white" font-size="18" font-weight="650">HASHED EVIDENCE MANIFEST</text>
+    <text x="1578" y="886" class="muted" font-size="16" text-anchor="end">Actual sample shown • 2026-08-07</text>
+  </g>
+</svg>
