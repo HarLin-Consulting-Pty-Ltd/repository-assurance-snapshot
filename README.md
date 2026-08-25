@@ -2,7 +2,7 @@
 
 Generate a read-only evidence dossier for one public GitHub repository revision.
 
-[Buy a human-reviewed A$49 public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot)
+[Buy a human-reviewed A$49 public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot?utm_source=github&utm_medium=organic&utm_campaign=repository_assurance_v1&utm_content=readme_top)
 
 [Open the buyer-facing assurance page](https://harlin-consulting-pty-ltd.github.io/repository-assurance-snapshot/)
 
@@ -85,13 +85,20 @@ the hashed evidence package within two business days after a valid public
 repository URL and matching order number are received. It is not an audit,
 certification, penetration test, legal licence opinion or security warranty.
 
-[Order the A$49 human-reviewed public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot)
+[Order the A$49 human-reviewed public-repository snapshot](https://msharlincreations.gumroad.com/l/public-repository-assurance-snapshot?utm_source=github&utm_medium=organic&utm_campaign=repository_assurance_v1&utm_content=readme_bottom)
 
 ## Tests
 
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+### Local scratch placement
+
+Build environments, install probes, smoke-test outputs and rendered QA artefacts
+must be created inside this project (use `.scratch/`, which is ignored) or in the
+operating system's temporary directory. Never create test or build directories
+directly under `C:\AI`.
 
 ## Safety boundary
 
